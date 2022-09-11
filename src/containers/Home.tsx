@@ -13,6 +13,7 @@ import serverAnimation from "../assets/lottie/server.json";
 import astronautAnimation from "../assets/lottie/astronaut.json";
 
 import { getContractLogs, mergeLogs } from "../utils/helpers";
+import RippleOUSD from "../components/RippleOUSD";
 
 export type LogData = {
     contractName: string;
@@ -186,10 +187,7 @@ const Home = () => {
 
     return (
         <div className=" bg-black w-screen h-screen flex flex-col items-center px-4">
-            <h1 className="mb-10 m-5 text-3xl font-bold text-primary">
-                OUSD Events
-            </h1>
-
+            <RippleOUSD />
             <div className=" flex gap-4 items-center flex-wrap justify-center w-full mb-5">
                 <p className=" text-white ">Filter by </p>
                 <div className="flex gap-4 items-center flex-wrap justify-center">

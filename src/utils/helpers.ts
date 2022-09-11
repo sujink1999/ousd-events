@@ -3,14 +3,14 @@ import { LogData } from "../containers/Home";
 import { provider } from "./provider";
 
 export const getContractLogs = async (
-    tokenAddress: string,
+    contractAddress: string,
     abi: string[],
     fromBlock: number,
     toBlock: number,
     name: string
 ): Promise<LogData[]> => {
     try {
-        const contract = new Contract(tokenAddress, abi, provider);
+        const contract = new Contract(contractAddress, abi, provider);
         let iface = new utils.Interface(abi);
         const events = await contract.queryFilter("*", fromBlock, toBlock);
 

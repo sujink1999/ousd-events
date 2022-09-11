@@ -6,7 +6,7 @@ module.exports = {
             futura: ["Futura"],
         },
         colors: {
-            primary: "#6F5EED",
+            primary: "#67747f",
             secondary: "#212325",
             black: "#161718",
             white: "#FFFFFF",
@@ -16,6 +16,9 @@ module.exports = {
                 250: "250px",
                 350: "350px",
                 500: "500px",
+            },
+            boxShadow: {
+                glow: "0 25px 50px -12px rgb(255 255 255 / 0.25)",
             },
         },
     },

@@ -27,8 +27,53 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: "Futura";
 }
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #67747f;
+    border-radius: 3px;
+}
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+}
+
+.ripple-animation-1 {
+    animation: ripple infinite ease-in;
+    animation-duration: 4500ms;
+    animation-delay: 0s;
+}
+.ripple-animation-2 {
+    animation: ripple infinite ease-in;
+    animation-duration: 4500ms;
+    animation-delay: 1500ms;
+}
+.ripple-animation-3 {
+    animation: ripple infinite ease-in;
+    animation-duration: 4500ms;
+    animation-delay: 3000ms;
+}
+
+@keyframes ripple {
+    0% {
+        height: 30px;
+        width: 30px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+    100% {
+        height: 150px;
+        width: 150px;
+        opacity: 0;
+    }
 }

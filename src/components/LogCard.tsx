@@ -1,4 +1,5 @@
 import { formatUnits } from "ethers/lib/utils";
+import { useEffect, useState } from "react";
 import { ExportIcon } from "../assets/Icon";
 import { LogData } from "../containers/Home";
 
@@ -21,7 +22,7 @@ const LogCard = ({
     return (
         <div
             onClick={onClick}
-            className=" cursor-pointer bg-secondary rounded-xl p-5 px-7 text-white flex flex-col gap-5 border border-secondary hover:border-primary/80 transition-all"
+            className=" cursor-pointer bg-secondary rounded-xl p-5 px-7  text-white flex flex-col gap-5 border  border-secondary hover:border-primary/80 transition-all "
         >
             <div className=" flex w-full items-center">
                 <p className="flex-1 text-sm text-left">{`${blockNumber}`}</p>

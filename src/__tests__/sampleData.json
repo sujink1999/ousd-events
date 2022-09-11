@@ -1,0 +1,71 @@
+{
+    "contractName": "OUSD Vault",
+    "event": {
+        "blockNumber": 15501377,
+        "blockHash": "0x9ad6c95bcbb68a2c68ff27ce477e98f193b352ba90ee3d85838b0487e094334a",
+        "transactionIndex": 14,
+        "removed": false,
+        "address": "0xE75D77B1865Ae93c7eaa3040B038D7aA7BC02F70",
+        "data": "0x00000000000000000000000077314eb392b2be47c014cde0706908b3307ad6a900000000000000000000000000000000000000000000003832559088b2dd3d690000000000000000000000000000000000000000000000059ea2280dab7c8624",
+        "topics": [
+            "0x09516ecf4a8a86e59780a9befc6dee948bc9e60a36e3be68d31ea817ee8d2c80"
+        ],
+        "transactionHash": "0x95bb09d5d1381554df3547c48e223b4c73a2ebdcc90744201f1be0bbfb8b88d2",
+        "logIndex": 56,
+        "event": "YieldDistribution",
+        "eventSignature": "YieldDistribution(address,uint256,uint256)",
+        "args": [
+            "0x77314EB392b2be47C014cde0706908b3307Ad6a9",
+            { "type": "BigNumber", "hex": "0x3832559088b2dd3d69" },
+            { "type": "BigNumber", "hex": "0x059ea2280dab7c8624" }
+        ]
+    },
+    "logDescription": {
+        "eventFragment": {
+            "name": "YieldDistribution",
+            "anonymous": false,
+            "inputs": [
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "indexed": null,
+                    "components": null,
+                    "arrayLength": null,
+                    "arrayChildren": null,
+                    "baseType": "address",
+                    "_isParamType": true
+                },
+                {
+                    "name": "_yield",
+                    "type": "uint256",
+                    "indexed": null,
+                    "components": null,
+                    "arrayLength": null,
+                    "arrayChildren": null,
+                    "baseType": "uint256",
+                    "_isParamType": true
+                },
+                {
+                    "name": "_fee",
+                    "type": "uint256",
+                    "indexed": null,
+                    "components": null,
+                    "arrayLength": null,
+                    "arrayChildren": null,
+                    "baseType": "uint256",
+                    "_isParamType": true
+                }
+            ],
+            "type": "event",
+            "_isFragment": true
+        },
+        "name": "YieldDistribution",
+        "signature": "YieldDistribution(address,uint256,uint256)",
+        "topic": "0x09516ecf4a8a86e59780a9befc6dee948bc9e60a36e3be68d31ea817ee8d2c80",
+        "args": [
+            "0x77314EB392b2be47C014cde0706908b3307Ad6a9",
+            { "type": "BigNumber", "hex": "0x3832559088b2dd3d69" },
+            { "type": "BigNumber", "hex": "0x059ea2280dab7c8624" }
+        ]
+    }
+}
